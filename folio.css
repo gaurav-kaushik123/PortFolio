@@ -310,10 +310,10 @@ pre{
     text-decoration: underline;
 }
 
-.sonty::before{
+/* .sonty::before{
     content: " \21E6"; /* Hexadecimal for Unicode Leftwards white arrow*/
     display: inline;
-}
+} */
 
 .scr{
     height: 5px;
@@ -383,4 +383,23 @@ pre{
 .box1{
     margin-left: 50px;
     padding: 20px 20px;
+}
+.tul li{
+    width: 200px;
+}
+
+.tul li:hover{
+    cursor: pointer;
+    font-weight: 600;
+}
+.tul:has(li:hover) li:hover::after{
+    content: " \21E6"; 
+    display: inline;
+    font-size: 25px;
+}
+
+.tul:has(li:hover) li:hover::marker{
+    color: brown;
+    font-weight: 600;
+    font-size: 22px;
 }
