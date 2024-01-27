@@ -404,3 +404,39 @@ pre{
     font-weight: 600;
     font-size: 22px;
 }
+
+@media screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .popup{
+        width: 90px;
+        height: 20px;
+        border-radius: 10px;
+        background-color: aqua;
+        text-align: center;
+        align-items: center;
+        padding: 2px; 
+        margin-top: 10px;
+        margin-right: 10px;
+        box-shadow: 5px 5px 5px wheat;
+        cursor: pointer;
+    }
+    
+    .popup:hover{
+        transform: scale(1.04);
+        color: blueviolet;
+    }
+    
+    .popbox{
+        width: 120px;
+        height: 120px;
+        border: 1px solid red;
+        position: absolute;
+        top: 70px;
+        /* left: 700px; */
+        background-color: burlywood;
+        display: none;
+        z-index: 2;
+        cursor: move;
+    }
+  }
+
