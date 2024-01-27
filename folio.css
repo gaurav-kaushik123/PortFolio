@@ -13,7 +13,7 @@
     top: 0;
     background-color: aqua;
     z-index: 2;
-    overflow: hidden;
+/*     overflow: hidden; */
 }
 
 .me{
@@ -34,6 +34,7 @@
     position: relative;
     width: 100%;
     padding-right: 40px;
+    /* overflow-x: hidden;   /*if  parent's css has overflow property then child's 'position sticky' will not work.*/
 }
 
 .photu{
