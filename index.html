@@ -52,7 +52,7 @@
             <div class="popbox">
                 <h3 style="margin: 10px 200px 10px 160px;">Feedback</h3><hr>
                 <i class="fa fa-window-close fa-xl popclos" title="close popup"></i>
-                <form action="javascript:alert('Thank You for your FeedBack');" method="post">
+                <form action="javascript:method();" method="post">
                     <span style="margin-left: 10px;">Name : <pre>   </pre></span> <input type="text" name="" id=""> <br><br>
                     <span style="margin-left: 10px;">Email : <pre>   </pre></span> <input type="text" name="" id=""> <br><br>
                     <span style="margin-left: 10px;">Feedback :</span>             <input type="text" name="" id=""> <br><br>
@@ -78,12 +78,12 @@
             <div class="stone10" title="DBMS">DBMS</div>
         </div>
 
-        <div class="dwnld">
+<!--         <div class="dwnld">
             <input type="text" name="" id="" class="givename" style="width: 150px;"><br>
             <button class="learn"> Press me!</button>
         </div>
 
-        <div class="ouch" id="home" >Home <br></div>
+        <div class="ouch" id="home" >Home <br></div> -->
 
         <div class="ouch" id="about" style="padding-top: 50px;"> <div class="pouch">About </div> <br>
             <p> I am Gaurav Kumar Kaushik, an experienced software Engineering. <br>
@@ -405,6 +405,11 @@
     });
 
     $(".tul li").attr("title", "Click to get pdf");
+
+    function method(){
+        $(".popclos").click();
+        alert("Thank you for your feedback!");
+    }
  
 </script>
 </html>
