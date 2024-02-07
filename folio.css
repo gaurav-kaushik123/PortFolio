@@ -405,6 +405,24 @@ pre{
     font-size: 22px;
 }
 
+.turn{
+    width: 40px;
+    height: 40px;
+    transform: rotate(45deg);
+    background-color: peru;
+    margin-top: 12px;
+    margin-bottom: 8px;
+    margin-right: 16px;
+    float: left;
+    border-radius: 4px;
+}
+
+.turn > i{
+    transform: rotate(-45deg);
+    margin-top: 11px;
+    margin-left: 12px;
+}
+
 @media screen and (max-width: 768px) {
     /* For mobile phones: */
     .popup{
