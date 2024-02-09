@@ -48,6 +48,11 @@
 
             <div class="box3">
                 <div class="popup">PopUp Feedback</div>
+                <div class="fin">
+                   <div class="fin1"><i class="fas fa-check-circle"></i></div>
+                   <div class="fin2">Thanks for Your Feedback !</div>
+                   <div class="fin3"></div>
+                </div>
             </div>
             <div class="popbox">
                 <h3 style="margin: 10px 200px 10px 160px;">Feedback</h3><hr>
@@ -402,6 +407,9 @@
 
     $(".popclos").click(() => {
         $(".popbox").css({ "display" : "none"});
+        $(".fin").css({"animation" : "anime 2.5s linear"});
+        $(".fin3").css({"animation" : "progress 1s linear 0.3s 1"});
+
     });
 
     $(".tul li").attr("title", "Click to get pdf");
@@ -410,6 +418,11 @@
         $(".popclos").click();
         alert("Thank you for your feedback!");
     }
+
+    $(window).on("beforeunload", function (e){
+        setTimeout(() => {}, 0);
+        return "existing" ;
+    });
  
 </script>
 </html>
