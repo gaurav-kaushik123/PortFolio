@@ -369,6 +369,7 @@ pre{
 .lin{
     background-color: rgba(45, 45, 160, 0.514);
     padding: 10px 10px;
+    margin: 1px 1px;
 }
 
 #particles-js{
