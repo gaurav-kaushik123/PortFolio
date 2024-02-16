@@ -417,7 +417,7 @@ pre{
     width: 120px;
     height: 25px;
     border-radius: 10px;
-    background-color: rgba(38, 16, 160, 0.74);
+    background-color: linear-gradient(to right, #2980B9, #6DD5FA);
     text-align: center;
     align-items: center;
     font-weight: 600;
