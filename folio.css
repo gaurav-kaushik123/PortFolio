@@ -582,7 +582,8 @@ pre{
     background-color: rgba(55, 55, 136, 0.514);
     padding-top: 5px;
     padding-left: 3px;
-    transform: translateX(250px);
+    transform: translateX(750px);
+    transform: scale(0);
     opacity: 0;
     visibility: hidden;
     position: relative;
@@ -619,12 +620,22 @@ pre{
 
 @keyframes anime {
 
-    5%, 95%{
-        transform: translateX(0);
+    5%{
+        transform: translateX(520px) scale(1);
         opacity: 1;
         visibility: visible;
-    }  
-    
+    }
+    65%{
+        transform: translateX(300px) scale(1);
+        opacity: 1;
+        visibility: visible;
+    }
+    100%{
+        transform: translateX(750px) scale(0);
+        opacity: 0;
+        visibility: hidden;
+    }
+
 }
 
 @keyframes progress {
