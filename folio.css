@@ -1,6 +1,7 @@
 
 html{
     scroll-behavior: smooth;
+    margin-right: 0px;
 }
 .nav{
     display: flex;
@@ -69,7 +70,7 @@ html{
 }
 
 body{
-
+    margin-right: 0px;
     background-color: rgba(199, 184, 184, 0.514);
 }
 
@@ -548,7 +549,7 @@ pre{
     justify-content: center;
     align-items: center;
     position: fixed;
-    bottom: 30px;
+    bottom: 20px;
     right: 36px;
     background-color: peru;
     width: 40px;
