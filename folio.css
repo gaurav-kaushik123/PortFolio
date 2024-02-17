@@ -297,6 +297,9 @@ body{
     position: relative;
     
 }
+.nav>a:hover{
+    color: #37B9F1
+}
 
 .pad{
     margin: 5px 5px;
