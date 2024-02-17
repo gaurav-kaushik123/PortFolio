@@ -851,15 +851,16 @@ circle{
     background-color: rgba(255, 255, 255, 0.562);
     position: absolute;
     top: -2px;
-    left: -10px;
+    left: 0px;
     animation: bright 3s ease-in infinite;
+    opacity: 0;
    
 }
 
 @keyframes bright {
 
-    5%{
-        transform: translateX(30px) skew(-40deg);
+   5%{
+        transform: translateX(25px) skew(-40deg);
         opacity: 1;
     }
     
