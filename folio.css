@@ -836,6 +836,59 @@ circle{
     
 }
 
+.popup::before{
+    content: "";
+    width: 35px;
+    height: 32px;
+    transform: skew(-40deg);
+    background-color: rgba(255, 255, 255, 0.562);
+    position: absolute;
+    top: -2px;
+    left: -10px;
+    animation: bright 3s linear infinite;
+   
+}
+
+@keyframes bright {
+
+    5%{
+        transform: translateX(30px) skew(-40deg);
+        opacity: 1;
+    }
+    
+    84%{
+        transform: translateX(120px) skew(-20deg);
+        width: 35px;
+        
+    }
+    85%{
+        transform: scale(0);
+        width: 20px;
+        opacity: 0;
+        visibility: hidden;
+    }
+    94%{
+        transform: translateX(120px) scale(0);
+        opacity: 0;
+        visibility: hidden;
+        
+    }
+    96%{
+        transform: translateX(120px) scale(0);
+        opacity: 0; 
+        visibility: hidden;
+    }
+    100%{
+        transform: translateX(120px) scale(0);
+        opacity: 0; 
+        visibility: hidden;
+    }
+    
+}
+
+
+
+
 
 
 
