@@ -788,6 +788,54 @@ circle{
     left: 30px;
 }
 
+.gk{
+    writing-mode: vertical-lr;
+    /* text-orientation: mixed; */
+    transform: rotate(180deg);
+    font-size: 32px;
+    font-weight: 600;
+    color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #2980b9;
+    background: linear-gradient(90deg, blue, red);
+    -webkit-background-clip: text;
+    background-clip: text;
+    letter-spacing: -3px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    animation: uff 3s infinite;
+}
+
+.gk span:nth-child(7){
+    color: black;
+    -webkit-text-stroke-color: black;
+}
+
+.wrapper{
+    position: absolute;
+    top: 80px;
+    left: 25px;
+}
+
+@keyframes uff {
+
+    10%{
+        letter-spacing: -5px;
+    }
+    40%{
+        letter-spacing: -8px;
+    }
+    70%{
+        letter-spacing: -5px;
+    }
+    90%{
+        letter-spacing: -2px;
+    }
+    96%{
+        letter-spacing: 1px;
+    }
+    
+}
+
 
 
 
