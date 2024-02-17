@@ -852,7 +852,7 @@ circle{
     position: absolute;
     top: -2px;
     left: -10px;
-    animation: bright 3s linear infinite;
+    animation: bright 3s ease-in infinite;
    
 }
 
