@@ -416,13 +416,13 @@ pre{
 .popup{
     width: 120px;
     height: 25px;
-    border-radius: 10px;
-    background-color: linear-gradient(90deg, #2980B9, #6DD5FA);
+    border-radius: 15px;
+    background: linear-gradient(90deg, #2980B9, #6DD5FA);
     text-align: center;
     align-items: center;
     font-weight: 600;
     cursor: pointer;
-    padding-top: 4px;
+    padding-top: 5px;
 }
 
 .popup:hover{
