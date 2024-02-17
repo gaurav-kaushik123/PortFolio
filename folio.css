@@ -420,12 +420,16 @@ pre{
     width: 120px;
     height: 25px;
     border-radius: 15px;
-    background: linear-gradient(90deg, #2980B9, #6DD5FA);
+    background: linear-gradient(90deg, #2980B9, #6DD5FA);;
     text-align: center;
     align-items: center;
     font-weight: 600;
     cursor: pointer;
     padding-top: 5px;
+    position: relative;
+    border: 1px solid red;
+    transform: scale(1.02);
+    margin-right: 0px;
 }
 
 .popup:hover{
