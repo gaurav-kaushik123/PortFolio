@@ -847,7 +847,7 @@ circle{
     content: "";
     width: 35px;
     height: 32px;
-    transform: skew(-40deg);
+    transform: skew(-35deg);
     background-color: rgba(255, 255, 255, 0.562);
     position: absolute;
     top: -2px;
@@ -860,12 +860,12 @@ circle{
 @keyframes bright {
 
    5%{
-        transform: translateX(25px) skew(-40deg);
+        transform: translateX(25px) skew(-35deg);
         opacity: 1;
     }
     
     84%{
-        transform: translateX(120px) skew(-20deg);
+        transform: translateX(100px) skew(-20deg);
         width: 35px;
         
     }
@@ -876,18 +876,18 @@ circle{
         visibility: hidden;
     }
     94%{
-        transform: translateX(120px) scale(0);
+        transform: translateX(100px) scale(0);
         opacity: 0;
         visibility: hidden;
         
     }
     96%{
-        transform: translateX(120px) scale(0);
+        transform: translateX(100px) scale(0);
         opacity: 0; 
         visibility: hidden;
     }
     100%{
-        transform: translateX(120px) scale(0);
+        transform: translateX(100px) scale(0);
         opacity: 0; 
         visibility: hidden;
     }
