@@ -474,9 +474,13 @@ pre{
 }
 
 .box1{
+    width: 300px;
     margin-left: 50px;
     padding: 20px 20px;
+    margin-right: 0px;
+    padding-right: 0px;
 }
+
 .tul li{
     width: 290px;
 }
