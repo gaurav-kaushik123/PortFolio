@@ -537,7 +537,21 @@
     // });
 
 
-   $(".mg").click(() => {
+//    Also circle animation code on line 460 & 469
+ 
+
+
+$(".mg").click(() => {
+console.log("From mg click");
+searchFunction();   
+
+});
+
+$(".searchclos").click(() => {   
+    $(".inp").val("");
+});
+
+function searchFunction(){
 
     const searchValue = $(".inp").val();
     console.log("===sinki==", searchValue);
@@ -545,20 +559,17 @@
     sinki.href = searchValue;
     document.body.appendChild(sinki);
     sinki.click();
+}
 
-   });
-
-//    Also circle animation code on line 460 & 469
- 
-    // 
-   
-
-
-$(".searchclos").click(() => {
-    
-    $(".inp").val("");
+$(".inp").on('keydown', (event) => {
+if (event.key === 'Enter') {
+console.log('Enter key pressed!' );
+// Perform desired actions here.
+searchFunction();
+}
 });
- 
+
+
 </script>
 </html>
 
