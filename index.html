@@ -256,6 +256,19 @@
           </div>
         </div>
 
+        <!-- responsive navbar -->
+        <div class="navicon hide"><i class="fas fa-bars"></i></div>
+        <div class="navtoggle">
+            <a class="tog2" href="#about">About</a><br>
+            <a class="tog3" href="#skills">Skills</a><br>
+            <a class="tog4" href="#education">Education</a><br>
+            <a class="tog5" href="#work">Work Experience</a><br>
+            <a class="tog6" href="#cert">Certificates</a><br>
+            <a class="tog1" href="#contacts">Contacts</a><br>
+            <a class="tog1" href="#">Home</a>
+        </div>
+        <!-- responsive navbar -->
+
         <!-- typed.js -->
 
         <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
@@ -567,6 +580,25 @@ console.log('Enter key pressed!' );
 // Perform desired actions here.
 searchFunction();
 }
+});
+
+        
+$(".navicon").click(() => {
+
+    var navcon = $(".navicon");
+
+    if(navcon.hasClass("hide")){
+    $(".navtoggle").css({"display" : "flex"});
+    navcon.removeClass("hide");
+    navcon.addClass("show");
+    }
+
+    else if(navcon.hasClass("show")){
+    $(".navtoggle").css({"display" : "none"});
+    navcon.removeClass("show");
+    navcon.addClass("hide");
+    }
+
 });
 
 
